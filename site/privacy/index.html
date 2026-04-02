@@ -6,7 +6,7 @@
     <title>Privacy Policy - X Thread Reader</title>
     <meta
       name="description"
-      content="Read the privacy policy for X Thread Reader, the local-only Chrome extension for exporting X/Twitter threads to Markdown."
+      content="Read the privacy policy for X Thread Reader, including what website content the extension handles, why permissions are used, and how data stays local."
     />
     <meta name="theme-color" content="#122131" />
     <meta property="og:type" content="article" />
@@ -54,8 +54,9 @@
           <span class="eyebrow">Privacy policy</span>
           <h1>Your thread data stays in your browser.</h1>
           <p>
-            X Thread Reader is designed as a local-first browser extension. This page explains what the extension does,
-            what data it touches, and what it intentionally does not collect.
+            X Thread Reader is designed as a local-first browser extension. This page explains what website content
+            the extension handles, why it needs its permissions, and how that data is limited to the extension's
+            single purpose.
           </p>
           <div class="meta-row">
             <span class="meta-pill">Effective date: April 2, 2026</span>
@@ -67,27 +68,46 @@
           <article class="article page-card reveal" data-reveal>
             <h2>Privacy overview</h2>
             <p>
-              X Thread Reader extracts public thread content from the X/Twitter page that you are already viewing.
-              The goal is to help you save that content as Markdown for your own reading, notes, or archives.
+              X Thread Reader accesses the X/Twitter page you are already viewing in order to extract the current
+              thread and export it as Markdown for your own reading, notes, or archives.
             </p>
             <div class="article-callout">
-              We do not operate a remote parsing service, do not require an account, and do not upload extracted thread content
-              to our own server as part of normal use.
+              X Thread Reader does not operate a remote parsing service, does not require an account, and does not
+              upload extracted thread content to our own servers as part of normal use.
             </div>
 
-            <h3>What the extension accesses</h3>
+            <h3>Single purpose</h3>
+            <p>
+              The extension has one primary purpose: when you actively trigger it on an X/Twitter post page, it extracts
+              the current thread and converts it into Markdown that you can copy or download locally.
+            </p>
+
+            <h3>What data the extension handles</h3>
             <ul>
               <li>The currently active X/Twitter tab when you trigger extraction.</li>
-              <li>Visible thread content and image links needed to generate the Markdown export.</li>
+              <li>Website content visible on that thread page, including post text and image links needed for export.</li>
               <li>Your browser clipboard only when you choose the copy action.</li>
             </ul>
 
-            <h3>What we do not collect</h3>
+            <h3>Why the permissions are used</h3>
+            <ul>
+              <li><strong>`activeTab`</strong>: used only after you click the extension so it can read the current tab and extract the thread you asked for.</li>
+              <li><strong>`x.com` and `twitter.com` host access</strong>: used only so the extension can operate on X/Twitter thread pages where extraction is supported.</li>
+            </ul>
+
+            <h3>How data is used</h3>
+            <p>
+              Website content accessed by X Thread Reader is used only to perform the extraction and Markdown export
+              that you requested. We do not use that content for advertising, profiling, unrelated analytics, or resale.
+            </p>
+
+            <h3>What we do not collect or sell</h3>
             <ul>
               <li>No account registration details.</li>
               <li>No saved thread history on our servers.</li>
               <li>No analytics tied to the content of the threads you export.</li>
-              <li>No sale of personal data.</li>
+              <li>No sale of personal data or website content.</li>
+              <li>No use of extracted content for advertising or data brokerage.</li>
             </ul>
 
             <h3>How exports are handled</h3>
@@ -96,16 +116,35 @@
               Where the file goes after that depends on your own device, browser, or note-taking workflow.
             </p>
 
+            <h3>Data sharing and transfer</h3>
+            <p>
+              Under normal use, extracted thread content is not transferred to our servers. We do not sell or transfer
+              that content to third parties for purposes unrelated to the extension's single purpose.
+            </p>
+
+            <h3>Retention</h3>
+            <p>
+              Because extraction happens locally, thread content is only handled within your browser session unless you
+              explicitly choose to copy or download the result yourself.
+            </p>
+
             <h3>Website analytics</h3>
             <p>
-              This marketing site is currently built as a static site. If analytics are added later, they should be privacy-conscious,
-              minimal, and avoid collecting the content of exported threads. If that changes, this page should be updated.
+              This marketing site is currently built as a static site. If analytics are added later, they should be
+              privacy-conscious, minimal, and should not collect the content of exported threads. If that changes,
+              this page should be updated.
+            </p>
+
+            <h3>Chrome Web Store policy alignment</h3>
+            <p>
+              The use of data accessed by X Thread Reader is intended to comply with the Chrome Web Store User Data Policy,
+              including the Limited Use requirements, for the extension's disclosed single purpose.
             </p>
 
             <h3>Changes to this policy</h3>
             <p>
-              If the extension adds a cloud feature, account system, or any server-side processing in the future, this privacy policy
-              must be updated before those changes go live.
+              If the extension adds a cloud feature, account system, server-side processing, or broader analytics in the
+              future, this privacy policy must be updated before those changes go live.
             </p>
           </article>
 
@@ -115,6 +154,7 @@
               <ul>
                 <li>Local-only extraction</li>
                 <li>No required sign-in</li>
+                <li>Handles website content only to export the current thread</li>
                 <li>No third-party thread storage</li>
                 <li>Markdown export generated client-side</li>
               </ul>
