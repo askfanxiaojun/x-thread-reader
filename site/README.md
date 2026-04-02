@@ -21,3 +21,8 @@ python3 -m http.server 4321 --directory site
 ```
 
 Then open `http://localhost:4321`.
+
+## Media assets
+
+- Product screenshots and demo videos live in `site/assets/screenshots/`
+- Prefer compressed web assets such as `xtr-hero-thread-export.webp` and `xtr-demo-workflow.mp4`
