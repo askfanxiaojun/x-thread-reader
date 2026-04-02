@@ -9,7 +9,8 @@
     "build": "wxt build",
     "build:firefox": "wxt build --browser firefox",
     "zip": "wxt zip",
-    "zip:firefox": "wxt zip --browser firefox"
+    "zip:firefox": "wxt zip --browser firefox",
+    "site:serve": "python3 -m http.server 4321 --directory site"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - X Thread Reader</title>
+    <meta
+      name="description"
+      content="Read the privacy policy for X Thread Reader, the local-only Chrome extension for exporting X/Twitter threads to Markdown."
+    />
+    <meta name="theme-color" content="#122131" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Privacy Policy - X Thread Reader" />
+    <meta
+      property="og:description"
+      content="X Thread Reader runs locally in the browser and does not send thread content to third-party servers."
+    />
+    <meta property="og:url" content="https://x-thread-reader.vercel.app/privacy/" />
+    <meta property="og:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <link rel="canonical" href="https://x-thread-reader.vercel.app/privacy/" />
+    <link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="X Thread Reader home">
+          <span class="brand-mark">X</span>
+          <span>
+            X Thread Reader<br />
+            <strong>Privacy first by design</strong>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/faq/">FAQ</a>
+          <a href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="lang-link" href="/zh-cn/privacy/" lang="zh-CN">中文</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal" data-reveal>
+          <span class="eyebrow">Privacy policy</span>
+          <h1>Your thread data stays in your browser.</h1>
+          <p>
+            X Thread Reader is designed as a local-first browser extension. This page explains what the extension does,
+            what data it touches, and what it intentionally does not collect.
+          </p>
+          <div class="meta-row">
+            <span class="meta-pill">Effective date: April 2, 2026</span>
+            <span class="meta-pill">Applies to the extension and this website</span>
+          </div>
+        </section>
+
+        <section class="article-layout">
+          <article class="article page-card reveal" data-reveal>
+            <h2>Privacy overview</h2>
+            <p>
+              X Thread Reader extracts public thread content from the X/Twitter page that you are already viewing.
+              The goal is to help you save that content as Markdown for your own reading, notes, or archives.
+            </p>
+            <div class="article-callout">
+              We do not operate a remote parsing service, do not require an account, and do not upload extracted thread content
+              to our own server as part of normal use.
+            </div>
+
+            <h3>What the extension accesses</h3>
+            <ul>
+              <li>The currently active X/Twitter tab when you trigger extraction.</li>
+              <li>Visible thread content and image links needed to generate the Markdown export.</li>
+              <li>Your browser clipboard only when you choose the copy action.</li>
+            </ul>
+
+            <h3>What we do not collect</h3>
+            <ul>
+              <li>No account registration details.</li>
+              <li>No saved thread history on our servers.</li>
+              <li>No analytics tied to the content of the threads you export.</li>
+              <li>No sale of personal data.</li>
+            </ul>
+
+            <h3>How exports are handled</h3>
+            <p>
+              When you copy Markdown or download a `.md` file, that output is created locally in your browser session.
+              Where the file goes after that depends on your own device, browser, or note-taking workflow.
+            </p>
+
+            <h3>Website analytics</h3>
+            <p>
+              This marketing site is currently built as a static site. If analytics are added later, they should be privacy-conscious,
+              minimal, and avoid collecting the content of exported threads. If that changes, this page should be updated.
+            </p>
+
+            <h3>Changes to this policy</h3>
+            <p>
+              If the extension adds a cloud feature, account system, or any server-side processing in the future, this privacy policy
+              must be updated before those changes go live.
+            </p>
+          </article>
+
+          <aside class="sidebar-stack reveal" data-reveal>
+            <section class="sidebar-card page-card">
+              <h3>Quick facts</h3>
+              <ul>
+                <li>Local-only extraction</li>
+                <li>No required sign-in</li>
+                <li>No third-party thread storage</li>
+                <li>Markdown export generated client-side</li>
+              </ul>
+            </section>
+            <section class="sidebar-card page-card">
+              <h3>Related pages</h3>
+              <p><a class="button-ghost" href="/faq/">Read the FAQ</a></p>
+              <p><a class="button-ghost" href="/">Back to homepage</a></p>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">X Thread Reader privacy policy. <span data-year></span></p>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/zh-cn/privacy/" lang="zh-CN">中文</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js" defer></script>
+  </body>
+</html>

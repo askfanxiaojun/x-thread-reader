@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - X Thread Reader</title>
+    <meta
+      name="description"
+      content="Answers about installation, compatibility, privacy, and Markdown export for X Thread Reader."
+    />
+    <meta name="theme-color" content="#122131" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="FAQ - X Thread Reader" />
+    <meta
+      property="og:description"
+      content="Find answers about saving X/Twitter threads, exporting Markdown, and using the extension locally."
+    />
+    <meta property="og:url" content="https://x-thread-reader.vercel.app/faq/" />
+    <meta property="og:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <link rel="canonical" href="https://x-thread-reader.vercel.app/faq/" />
+    <link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does X Thread Reader do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It captures a complete X/Twitter thread, preserves image links, and exports the result as clean Markdown."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does X Thread Reader upload my thread data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Extraction and formatting are handled locally in the browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it support both x.com and twitter.com?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The extension supports thread pages on both domains when the URL follows the standard status format."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="X Thread Reader home">
+          <span class="brand-mark">X</span>
+          <span>
+            X Thread Reader<br />
+            <strong>Frequently asked questions</strong>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="lang-link" href="/zh-cn/faq/" lang="zh-CN">中文</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h1>Everything people ask before saving their first thread.</h1>
+          <p>
+            These are the practical questions around compatibility, privacy, installation, and Markdown export.
+            Clear answers help the website rank for useful searches and help users decide quickly.
+          </p>
+        </section>
+
+        <section class="page-grid section">
+          <article class="page-card reveal" data-reveal>
+            <h3>What does X Thread Reader do?</h3>
+            <p>It captures a full X/Twitter thread and exports it as Markdown so you can keep it in notes, docs, or archives.</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>Does it work on both x.com and twitter.com?</h3>
+            <p>Yes. The extension supports both domains when you are on a standard post page containing `/status/`.</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>Can it handle long threads?</h3>
+            <p>That is one of its main jobs. It auto-scrolls to load more posts and keeps collecting content as the thread expands.</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>Are images included?</h3>
+            <p>Image links are preserved inside the Markdown output, which makes the export much more complete than plain copied text.</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>Does it store exported threads on a server?</h3>
+            <p>No. Extraction happens locally in the browser and the result is copied or downloaded directly by you.</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>Where do I install it?</h3>
+            <p>The Chrome Web Store listing is not published yet. Until then, the current setup instructions live in the GitHub repository.</p>
+          </article>
+        </section>
+
+        <section class="article-layout">
+          <article class="article page-card reveal" data-reveal>
+            <h2>Installation and usage notes</h2>
+            <h3>Current installation path</h3>
+            <p>
+              Right now the project is available as an open-source Chrome extension. You can clone the repository,
+              build it, and load the unpacked extension in Chrome.
+            </p>
+            <div class="article-callout">
+              Once the Chrome Web Store page is live, replace the main call-to-action links on the homepage with the store URL.
+            </div>
+            <h3>Best use cases</h3>
+            <ul>
+              <li>Saving research threads before they disappear into the timeline.</li>
+              <li>Turning long Twitter posts into notes for Obsidian or Notion.</li>
+              <li>Archiving writing references and image-heavy explanation threads.</li>
+            </ul>
+            <h3>When a thread may fail</h3>
+            <p>
+              Extremely dynamic pages, gated content, or changes in the X/Twitter DOM can affect extraction.
+              Because the project is open source, those issues can be fixed quickly when the selectors change.
+            </p>
+          </article>
+
+          <aside class="sidebar-stack reveal" data-reveal>
+            <section class="sidebar-card page-card">
+              <h3>Key links</h3>
+              <p><a class="button-ghost" href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">Open GitHub repo</a></p>
+              <p><a class="button-ghost" href="/privacy/">Privacy policy</a></p>
+            </section>
+            <section class="sidebar-card page-card">
+              <h3>Search terms this page answers</h3>
+              <ul>
+                <li>twitter thread to markdown</li>
+                <li>save x thread</li>
+                <li>twitter thread reader chrome extension</li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">X Thread Reader FAQ. <span data-year></span></p>
+          <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/zh-cn/faq/" lang="zh-CN">中文</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js" defer></script>
+  </body>
+</html>

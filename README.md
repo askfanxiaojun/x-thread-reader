@@ -70,6 +70,17 @@ npm run build
 npm run zip
 ```
 
+### 官网预览
+
+仓库中新增了一个可直接部署到 Vercel 的静态官网目录：`site/`
+
+```bash
+# 本地预览官网
+npm run site:serve
+```
+
+然后访问 `http://localhost:4321`
+
 ## 技术栈
 
 | 技术 | 说明 |

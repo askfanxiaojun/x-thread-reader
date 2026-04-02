@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隐私政策 - X Thread Reader</title>
+    <meta
+      name="description"
+      content="查看 X Thread Reader 的隐私政策：插件本地运行，不上传 Thread 内容，适合放心归档和导出。"
+    />
+    <meta name="theme-color" content="#122131" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="隐私政策 - X Thread Reader" />
+    <meta property="og:description" content="X Thread Reader 在浏览器本地处理内容，不依赖远程服务器解析 Thread。" />
+    <meta property="og:url" content="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <meta property="og:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <link rel="canonical" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/zh-cn/" aria-label="X Thread Reader 中文首页">
+          <span class="brand-mark">X</span>
+          <span>
+            X Thread Reader<br />
+            <strong>清晰简单的隐私承诺</strong>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a href="/zh-cn/">首页</a>
+          <a href="/zh-cn/faq/">FAQ</a>
+          <a href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="lang-link" href="/privacy/">EN</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal" data-reveal>
+          <span class="eyebrow">隐私政策</span>
+          <h1>你的 Thread 内容，默认只留在浏览器里。</h1>
+          <p>
+            X Thread Reader 采用 local-first 设计。下面这页会说明插件会接触哪些数据、不会收集什么，
+            以及导出的 Markdown 是如何生成的。
+          </p>
+          <div class="meta-row">
+            <span class="meta-pill">生效日期：2026 年 4 月 2 日</span>
+            <span class="meta-pill">适用于官网与插件</span>
+          </div>
+        </section>
+
+        <section class="article-layout">
+          <article class="article page-card reveal" data-reveal>
+            <h2>隐私概览</h2>
+            <p>
+              X Thread Reader 会读取你当前已经打开的 X/Twitter 页面中的公开 Thread 内容，
+              目的仅仅是帮你把这些内容整理为 Markdown，方便你个人保存、阅读或归档。
+            </p>
+            <div class="article-callout">
+              我们不提供远程解析服务，不要求注册账号，也不会在正常使用中把你导出的 Thread 内容上传到我们自己的服务器。
+            </div>
+
+            <h3>插件会接触哪些内容</h3>
+            <ul>
+              <li>你主动触发提取时所在的 X/Twitter 当前标签页。</li>
+              <li>用于生成 Markdown 的 Thread 文本内容和图片链接。</li>
+              <li>只有在你点击复制时，才会调用浏览器剪贴板能力。</li>
+            </ul>
+
+            <h3>我们不会收集什么</h3>
+            <ul>
+              <li>不会要求账号注册。</li>
+              <li>不会在服务器保存你的 Thread 历史。</li>
+              <li>不会基于你导出的内容做个性化分析。</li>
+              <li>不会出售个人数据。</li>
+            </ul>
+
+            <h3>导出文件如何处理</h3>
+            <p>
+              无论是复制 Markdown 还是下载 `.md` 文件，结果都在你的浏览器会话中本地生成。
+              文件后续如何保存、同步或导入笔记工具，由你自己的设备和工作流决定。
+            </p>
+
+            <h3>官网统计</h3>
+            <p>
+              当前官网是一个静态站点。如果未来增加统计脚本，应该尽量采用隐私友好的方案，
+              并且不采集 Thread 导出内容。如果这部分发生变化，这页需要同步更新。
+            </p>
+
+            <h3>隐私政策更新</h3>
+            <p>
+              如果未来加入云端功能、账号系统，或任何服务端处理逻辑，这份隐私政策应该在功能上线前更新。
+            </p>
+          </article>
+
+          <aside class="sidebar-stack reveal" data-reveal>
+            <section class="sidebar-card page-card">
+              <h3>快速结论</h3>
+              <ul>
+                <li>本地提取</li>
+                <li>无需登录</li>
+                <li>不在第三方服务器保存 Thread</li>
+                <li>Markdown 在客户端生成</li>
+              </ul>
+            </section>
+            <section class="sidebar-card page-card">
+              <h3>相关页面</h3>
+              <p><a class="button-ghost" href="/zh-cn/faq/">查看 FAQ</a></p>
+              <p><a class="button-ghost" href="/zh-cn/">返回首页</a></p>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">X Thread Reader 隐私政策。<span data-year></span></p>
+          <div class="footer-links">
+            <a href="/zh-cn/">首页</a>
+            <a href="/zh-cn/faq/">FAQ</a>
+            <a href="/privacy/">EN</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js" defer></script>
+  </body>
+</html>

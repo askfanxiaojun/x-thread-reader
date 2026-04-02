@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://x-thread-reader.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/" />
+  </url>
+  <url>
+    <loc>https://x-thread-reader.vercel.app/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
+  </url>
+  <url>
+    <loc>https://x-thread-reader.vercel.app/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
+  </url>
+  <url>
+    <loc>https://x-thread-reader.vercel.app/zh-cn/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/" />
+  </url>
+  <url>
+    <loc>https://x-thread-reader.vercel.app/zh-cn/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
+  </url>
+  <url>
+    <loc>https://x-thread-reader.vercel.app/zh-cn/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
+  </url>
+</urlset>

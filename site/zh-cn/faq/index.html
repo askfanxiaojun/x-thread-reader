@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常见问题 - X Thread Reader</title>
+    <meta
+      name="description"
+      content="关于 X Thread Reader 的安装方式、兼容范围、隐私说明和 Markdown 导出的常见问题。"
+    />
+    <meta name="theme-color" content="#122131" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="常见问题 - X Thread Reader" />
+    <meta property="og:description" content="解答关于保存 X/Twitter Thread、导出 Markdown 和本地运行的常见问题。" />
+    <meta property="og:url" content="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <meta property="og:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <link rel="canonical" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
+    <link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/zh-cn/" aria-label="X Thread Reader 中文首页">
+          <span class="brand-mark">X</span>
+          <span>
+            X Thread Reader<br />
+            <strong>常见问题</strong>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a href="/zh-cn/">首页</a>
+          <a href="/zh-cn/privacy/">隐私</a>
+          <a href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="lang-link" href="/faq/">EN</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <h1>用户在第一次使用前，通常会先问这些问题。</h1>
+          <p>
+            这里集中回答关于兼容性、安装方式、导出结果和隐私的常见问题。
+            对 SEO 来说，这类页面也很适合承接明确搜索意图。
+          </p>
+        </section>
+
+        <section class="page-grid section">
+          <article class="page-card reveal" data-reveal>
+            <h3>X Thread Reader 是做什么的？</h3>
+            <p>它可以完整提取 X/Twitter 上的 Thread，并导出为适合保存和整理的 Markdown 文件。</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>支持 x.com 和 twitter.com 吗？</h3>
+            <p>支持。只要是标准的推文详情页，并且 URL 中带 `/status/`，就可以识别。</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>能处理很长的 Thread 吗？</h3>
+            <p>可以。这正是插件的核心能力之一：会自动滚动并尽量把后续内容加载出来。</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>导出内容会保留图片吗？</h3>
+            <p>会。Markdown 结果中会保留图片链接，方便你后续继续整理和引用。</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>会把我提取的内容上传到服务器吗？</h3>
+            <p>不会。提取和格式化都在浏览器本地完成，结果由你自己复制或下载。</p>
+          </article>
+          <article class="page-card reveal" data-reveal>
+            <h3>现在在哪里安装？</h3>
+            <p>Chrome Web Store 页面还在准备中。当前可以先通过 GitHub 仓库查看源码和手动安装方式。</p>
+          </article>
+        </section>
+
+        <section class="article-layout">
+          <article class="article page-card reveal" data-reveal>
+            <h2>安装与使用说明</h2>
+            <h3>当前安装方式</h3>
+            <p>
+              目前项目以开源 Chrome 插件的形式存在。你可以克隆仓库、构建项目，
+              再在 Chrome 里以开发者模式加载已解压扩展程序。
+            </p>
+            <div class="article-callout">
+              等 Chrome Web Store 页面正式上线后，只需要把首页主按钮替换成商店安装链接即可。
+            </div>
+            <h3>典型使用场景</h3>
+            <ul>
+              <li>把研究类 Thread 留存下来，避免之后很难再翻到。</li>
+              <li>把长推文导入 Obsidian、Notion 或本地知识库。</li>
+              <li>保存含图较多的教程线程，方便后续写作和引用。</li>
+            </ul>
+            <h3>什么时候可能失败</h3>
+            <p>
+              如果 X/Twitter 页面结构发生明显变化，或者内容受限，提取可能受影响。
+              但因为项目是开源的，选择器变化后可以快速修复。
+            </p>
+          </article>
+
+          <aside class="sidebar-stack reveal" data-reveal>
+            <section class="sidebar-card page-card">
+              <h3>快速入口</h3>
+              <p><a class="button-ghost" href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">打开 GitHub 仓库</a></p>
+              <p><a class="button-ghost" href="/zh-cn/privacy/">隐私政策</a></p>
+            </section>
+            <section class="sidebar-card page-card">
+              <h3>这页承接的搜索意图</h3>
+              <ul>
+                <li>twitter thread 导出 markdown</li>
+                <li>保存 x thread</li>
+                <li>twitter thread chrome 插件</li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">X Thread Reader FAQ。<span data-year></span></p>
+          <div class="footer-links">
+            <a href="/zh-cn/">首页</a>
+            <a href="/zh-cn/privacy/">隐私</a>
+            <a href="/faq/">EN</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js" defer></script>
+  </body>
+</html>

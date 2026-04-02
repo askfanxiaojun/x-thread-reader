@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Thread Reader - Export X and Twitter Threads to Markdown</title>
+    <meta
+      name="description"
+      content="X Thread Reader is a Chrome extension that captures complete X/Twitter threads, preserves image links, and exports everything to clean Markdown in one click."
+    />
+    <meta
+      name="keywords"
+      content="twitter thread to markdown,x thread reader,export twitter thread,save twitter threads,chrome extension for x threads"
+    />
+    <meta name="theme-color" content="#122131" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="X Thread Reader - Export X and Twitter Threads to Markdown" />
+    <meta
+      property="og:description"
+      content="Capture the full thread, keep the image links, and save long X/Twitter posts as tidy Markdown files."
+    />
+    <meta property="og:url" content="https://x-thread-reader.vercel.app/" />
+    <meta property="og:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <meta property="og:site_name" content="X Thread Reader" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="X Thread Reader - Export X and Twitter Threads to Markdown" />
+    <meta
+      name="twitter:description"
+      content="A local-only Chrome extension for reading, saving, and exporting long X/Twitter threads."
+    />
+    <meta name="twitter:image" content="https://x-thread-reader.vercel.app/assets/og-cover.svg" />
+    <link rel="canonical" href="https://x-thread-reader.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/" />
+    <link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "X Thread Reader",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "browserRequirements": "Google Chrome or Chromium-based browser",
+        "description": "A Chrome extension that captures full X/Twitter threads, preserves image links, and exports the content as clean Markdown.",
+        "url": "https://x-thread-reader.vercel.app/",
+        "image": "https://x-thread-reader.vercel.app/assets/og-cover.svg",
+        "softwareVersion": "1.0.0",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "sameAs": ["https://github.com/askfanxiaojun/x-thread-reader"]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="X Thread Reader home">
+          <span class="brand-mark">X</span>
+          <span>
+            X Thread Reader<br />
+            <strong>Thread archiving for serious readers</strong>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">How it works</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/privacy/">Privacy</a>
+          <a class="lang-link" href="/zh-cn/" lang="zh-CN">中文</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy reveal" data-reveal>
+            <span class="eyebrow">Chrome extension for X and Twitter</span>
+            <h1>Turn sprawling threads into clean Markdown archives.</h1>
+            <p>
+              X Thread Reader helps you capture a complete X/Twitter thread, keep the image links,
+              and export everything into one tidy Markdown file. No account required. No cloud sync.
+              Just a faster way to save the posts worth keeping.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#workflow">See the 3-step flow</a>
+              <a class="button-secondary" href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">
+                View on GitHub
+              </a>
+            </div>
+            <div class="hero-note">
+              <span>Works on `x.com` and `twitter.com` status pages</span>
+              <span>Images preserved in exported Markdown</span>
+              <span>Runs locally in your browser</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" data-reveal>
+            <div class="floating-tag tag-one">Long thread? Still readable.</div>
+            <div class="window-card">
+              <div class="window-header" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <div class="window-body" aria-label="Markdown preview">
+                <code>
+# Why the best threads are hard to save
+
+1. Good ideas are often split across 20+ posts.
+2. Screenshots disappear into camera rolls.
+3. Copy-paste ruins the structure.
+
+![Image](https://pbs.twimg.com/...)
+
+- Captured from a full X thread
+- Exported as Markdown
+- Ready for notes, docs, or archives
+                </code>
+              </div>
+              <div class="window-caption">
+                <span>One click from thread to archive</span>
+                <span>Built for readers, writers, and researchers</span>
+              </div>
+            </div>
+            <div class="floating-tag tag-two">Local-only processing</div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="proof-title">
+          <div class="section-heading reveal" data-reveal>
+            <div>
+              <span class="kicker">Why people need it</span>
+              <h2 id="proof-title">A simpler way to save Twitter threads that actually matter.</h2>
+            </div>
+            <p>
+              Great threads are often buried inside fast-moving timelines. X Thread Reader is built for
+              people who want to keep the useful ones in a format that still feels readable later.
+            </p>
+          </div>
+          <div class="metrics">
+            <article class="panel reveal" data-reveal>
+              <div class="metric-value">Full</div>
+              <p class="metric-copy">
+                The extension auto-scrolls and keeps collecting posts so long threads do not get cut off halfway.
+              </p>
+            </article>
+            <article class="panel reveal" data-reveal>
+              <div class="metric-value">Clean</div>
+              <p class="metric-copy">
+                Output is organized into Markdown, making it easy to paste into Obsidian, Notion, docs, or a repo.
+              </p>
+            </article>
+            <article class="panel reveal" data-reveal>
+              <div class="metric-value">Local</div>
+              <p class="metric-copy">
+                All extraction happens inside the browser. The site and extension do not need your thread data on a server.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="features" aria-labelledby="feature-title">
+          <div class="section-heading reveal" data-reveal>
+            <div>
+              <span class="kicker">What it does</span>
+              <h2 id="feature-title">Built for the exact job: export a Twitter thread to Markdown.</h2>
+            </div>
+            <p>
+              The product is deliberately narrow. It does one thing well: read a thread, gather the posts,
+              and turn the result into a portable text archive.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal" data-reveal>
+              <div class="feature-index">01</div>
+              <h3>Detects thread pages automatically</h3>
+              <p>Open any post URL with `/status/` and the extension knows when it should start working.</p>
+            </article>
+            <article class="feature-card reveal" data-reveal>
+              <div class="feature-index">02</div>
+              <h3>Captures long threads end to end</h3>
+              <p>Auto-scrolling helps uncover replies and continuation posts so your archive stays complete.</p>
+            </article>
+            <article class="feature-card reveal" data-reveal>
+              <div class="feature-index">03</div>
+              <h3>Preserves image links</h3>
+              <p>Image URLs are included in the Markdown output, which is useful for research or content reuse.</p>
+            </article>
+            <article class="feature-card reveal" data-reveal>
+              <div class="feature-index">04</div>
+              <h3>Copies or downloads instantly</h3>
+              <p>When extraction is done, copy to the clipboard or save as a `.md` file for later reading.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="detail-title">
+          <div class="section-heading reveal" data-reveal>
+            <div>
+              <span class="kicker">What the export looks like</span>
+              <h2 id="detail-title">Readable output beats screenshots every time.</h2>
+            </div>
+            <p>
+              If people search for “save Twitter thread” or “export X thread with images”, they usually want a format
+              that can survive outside the timeline. Markdown is that format.
+            </p>
+          </div>
+          <div class="detail-grid">
+            <article class="detail-card split reveal" data-reveal>
+              <div>
+                <div class="detail-index">Archive</div>
+                <h3>Markdown that stays useful after the timeline is gone</h3>
+                <p>
+                  Exported threads stay portable. You can add them to your personal wiki, your writing notes,
+                  your internal docs, or a plain text archive without reformatting everything by hand.
+                </p>
+                <p>
+                  For users who search “twitter thread reader” or “thread to markdown chrome extension”,
+                  that is the main promise: capture first, reuse later.
+                </p>
+              </div>
+              <div class="markdown-output">
+                <code>
+# Example thread title
+
+- Author: @example
+- Source: x.com/.../status/123
+
+## Post 1
+Opening idea.
+
+## Post 2
+Supporting argument.
+
+![Image](https://pbs.twimg.com/...)
+                </code>
+              </div>
+            </article>
+            <article class="detail-card reveal" data-reveal>
+              <div class="detail-index">Trust</div>
+              <h3>Privacy that is easy to explain</h3>
+              <p>
+                X Thread Reader runs locally, keeps processing in the browser, and does not rely on a dashboard or a remote parser.
+                That makes the value proposition cleaner and the privacy story stronger.
+              </p>
+              <p><a class="button-ghost" href="/privacy/">Read the privacy policy</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="workflow" aria-labelledby="workflow-title">
+          <div class="section-heading reveal" data-reveal>
+            <div>
+              <span class="kicker">How it works</span>
+              <h2 id="workflow-title">How to export a Twitter thread in three quick steps.</h2>
+            </div>
+            <p>
+              The workflow is intentionally short so the extension feels like a reading tool, not a complicated platform.
+            </p>
+          </div>
+          <div class="steps">
+            <article class="step-card reveal" data-reveal>
+              <div class="step-number">1</div>
+              <h3>Open a post on X or Twitter</h3>
+              <p>Visit any thread page on `x.com` or `twitter.com` where the URL contains `/status/`.</p>
+            </article>
+            <article class="step-card reveal" data-reveal>
+              <div class="step-number">2</div>
+              <h3>Click the extension in your toolbar</h3>
+              <p>The popup starts extraction, scrolls when needed, and shows progress while it collects the thread.</p>
+            </article>
+            <article class="step-card reveal" data-reveal>
+              <div class="step-number">3</div>
+              <h3>Copy or download the Markdown file</h3>
+              <p>Move the result straight into your notes, archive, writing workflow, or research folder.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-preview-title">
+          <div class="section-heading reveal" data-reveal>
+            <div>
+              <span class="kicker">Common questions</span>
+              <h2 id="faq-preview-title">The practical details people care about before installing.</h2>
+            </div>
+            <p>
+              Search traffic only matters if the page answers the real pre-install questions clearly: compatibility,
+              privacy, output format, and installation path.
+            </p>
+          </div>
+          <div class="faq-grid">
+            <article class="faq-item reveal" data-reveal>
+              <h3>Does it work on both x.com and twitter.com?</h3>
+              <p>Yes. The extension supports thread pages on both domains as long as they use the standard status URL format.</p>
+            </article>
+            <article class="faq-item reveal" data-reveal>
+              <h3>Does it upload my saved thread anywhere?</h3>
+              <p>No. Extraction and formatting happen in the browser, and the exported Markdown stays with you.</p>
+            </article>
+            <article class="faq-item reveal" data-reveal>
+              <h3>Can it keep image references?</h3>
+              <p>Yes. Image links are included in the Markdown output so the archive is more complete than plain text.</p>
+            </article>
+            <article class="faq-item reveal" data-reveal>
+              <h3>Where can I install it?</h3>
+              <p>The Chrome Web Store listing is coming soon. For now, the source and setup guide are available on GitHub.</p>
+            </article>
+          </div>
+          <p class="meta-row reveal" data-reveal>
+            <a class="button-ghost" href="/faq/">Read the full FAQ</a>
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="cta-panel reveal" data-reveal>
+            <div>
+              <span class="kicker">Ready to launch</span>
+              <h2>Give the extension a real front door before you ship the store listing.</h2>
+              <p>
+                This site is ready to act as the official homepage for X Thread Reader. Publish it on Vercel,
+                connect your domain later, and point your Chrome Web Store listing back here when it goes live.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="button" href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">Open GitHub</a>
+              <a class="button-secondary" href="/zh-cn/" lang="zh-CN">中文页面</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">X Thread Reader - a local-first Chrome extension for exporting X/Twitter threads. <span data-year></span></p>
+          <div class="footer-links">
+            <a href="/privacy/">Privacy</a>
+            <a href="/faq/">FAQ</a>
+            <a href="/zh-cn/" lang="zh-CN">中文</a>
+            <a href="https://github.com/askfanxiaojun/x-thread-reader" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js" defer></script>
+  </body>
+</html>
