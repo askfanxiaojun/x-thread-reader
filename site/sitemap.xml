@@ -2,36 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://x-thread-reader.vercel.app/</loc>
+    <lastmod>2026-04-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/" />
   </url>
   <url>
     <loc>https://x-thread-reader.vercel.app/privacy/</loc>
+    <lastmod>2026-04-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
   </url>
   <url>
     <loc>https://x-thread-reader.vercel.app/faq/</loc>
+    <lastmod>2026-04-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
   </url>
   <url>
     <loc>https://x-thread-reader.vercel.app/zh-cn/</loc>
+    <lastmod>2026-04-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/" />
   </url>
   <url>
     <loc>https://x-thread-reader.vercel.app/zh-cn/privacy/</loc>
+    <lastmod>2026-04-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/privacy/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/privacy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/privacy/" />
   </url>
   <url>
     <loc>https://x-thread-reader.vercel.app/zh-cn/faq/</loc>
+    <lastmod>2026-04-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://x-thread-reader.vercel.app/faq/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://x-thread-reader.vercel.app/zh-cn/faq/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://x-thread-reader.vercel.app/faq/" />
